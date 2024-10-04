@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валідація та Таблиця</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Форма для вводу даних -->
+        <section class="form-section">
+            <h1>Форма для заповнення</h1>
+            <form id="myForm">
+                <label for="name">ПІБ</label>
+                <input type="text" id="name" name="name" placeholder="Введіть ПІБ" required>
+
+                <label for="group">Група</label>
+                <input type="text" id="group" name="group" placeholder="Введіть групу" required>
+
+                <label for="variant">Варіант</label>
+                <input type="number" id="variant" name="variant" placeholder="Введіть варіант" required>
+
+                <label for="phone">Телефон</label>
+                <input type="text" id="phone" name="phone" placeholder="Введіть телефон" required>
+
+                <label for="email">Пошта</label>
+                <input type="email" id="email" name="email" placeholder="Введіть пошту" required>
+
+                <button type="submit">Підтвердити</button>
+            </form>
+        </section>
+
+        <!-- Виведена інформація -->
+        <section class="output-section">
+            <h2>Введені дані</h2>
+            <div id="output">
+                <p>ПІБ: <span id="outputName"></span></p>
+                <p>Група: <span id="outputGroup"></span></p>
+                <p>Варіант: <span id="outputVariant"></span></p>
+                <p>Телефон: <span id="outputPhone"></span></p>
+                <p>Пошта: <span id="outputEmail"></span></p>
+            </div>
+        </section>
+
+        <!-- Палітра кольорів -->
+        <section class="color-picker-section">
+            <h2>Виберіть колір для клітинки</h2>
+            <input type="color" id="colorPicker" value="#FFDD57">
+        </section>
+
+        <!-- Таблиця для завдання -->
+        <section class="table-section">
+            <h2>Завдання: Таблиця 6x6</h2>
+            <table id="taskTable">
+                <!-- Таблиця буде генеруватися динамічно через JS -->
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

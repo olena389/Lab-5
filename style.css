@@ -1,0 +1,94 @@
+/* Загальний стиль для сторінки */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стиль для секцій */
+h1, h2 {
+    color: #4A90E2;
+}
+
+.form-section, .output-section, .table-section, .color-picker-section {
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #4A90E2;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="color"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Виведення інформації */
+#output p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Таблиця */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Клітинка при наведенні курсора */
+td:hover {
+    background-color: #f0f0f0;
+}
+
+/* Клітинка з вибраним варіантом */
+.selected {
+    background-color: #FFDD57;
+}
+
+.random-color {
+    background-color: #e2e2e2;
+}
